@@ -1,0 +1,55 @@
+{
+  "PatchType": "feature",
+  "Name": "SD-1.01.SYS",
+  "Description": "Create User and Workspace",
+  "Notes": null,
+  "RepoCode": "simple-diary",
+  "ProductCode": "SD",
+  "PatchCreateDateTime": "0001-01-01T00:00:00",
+  "PatchCreatedBy": null,
+  "Branch": "SD-1",
+  "TagBase": "01",
+  "TagA": "SD-1.01A",
+  "TagB": "SD-1.01B",
+  "Schema": "SYS",
+  "Suffix": null,
+  "FileCount": 2,
+  "AppCount": 0,
+  "PreReqCount": 0,
+  "TargetFilesDict": {
+    "Users\\diary.usr": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\SYS\\users\\diary.usr",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": false
+    },
+    "Miscellaneous\\DIARY.sql": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\SYS\\workspaces\\DIARY.sql",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": false
+    }
+  },
+  "Apps": [],
+  "LastPatchPreReqs": [],
+  "BestOrderPreReqs": [],
+  "AppPreReqs": [],
+  "PromoLevels": [
+    "PRD",
+    "UAT",
+    "HVM",
+    "TST",
+    "DEV",
+    "FVM"
+  ],
+  "ReRunnable": true,
+  "Trackable": true,
+  "SysDBA": true,
+  "AltSchemas": true
+}
