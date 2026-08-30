@@ -1,0 +1,78 @@
+{
+  "PatchType": "feature",
+  "Name": "SD-1.01.DIARY",
+  "Description": "Install tables and views",
+  "Notes": null,
+  "RepoCode": "simple-diary",
+  "ProductCode": "SD",
+  "PatchCreateDateTime": "0001-01-01T00:00:00",
+  "PatchCreatedBy": null,
+  "Branch": "SD-1",
+  "TagBase": "01",
+  "TagA": "SD-1.01A",
+  "TagB": "SD-1.01B",
+  "Schema": "DIARY",
+  "Suffix": null,
+  "FileCount": 4,
+  "AppCount": 1,
+  "PreReqCount": 0,
+  "TargetFilesDict": {
+    "Tables\\diary_entry.tab": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\DIARY\\tables\\diary_entry.tab",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": true
+    },
+    "Tables\\tag.tab": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\DIARY\\tables\\tag.tab",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": true
+    },
+    "Tables\\diary_entry_tag.tab": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\DIARY\\tables\\diary_entry_tag.tab",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": true
+    },
+    "Views\\diary_entry_tags_v.vw": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\DIARY\\views\\diary_entry_tags_v.vw",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": false
+    }
+  },
+  "Apps": [
+    {
+      "AppNo": "100",
+      "SHA1": null
+    }
+  ],
+  "LastPatchPreReqs": [],
+  "BestOrderPreReqs": [],
+  "AppPreReqs": [],
+  "PromoLevels": [
+    "PRD",
+    "UAT",
+    "HVM",
+    "TST",
+    "DEV",
+    "FVM"
+  ],
+  "ReRunnable": true,
+  "Trackable": true,
+  "SysDBA": false,
+  "AltSchemas": true
+}
