@@ -1,0 +1,55 @@
+{
+  "PatchType": "feature",
+  "Name": "SD-2.01.DIARY",
+  "Description": "Create tables client, diary_entry_client",
+  "Notes": null,
+  "RepoCode": "simple-diary",
+  "ProductCode": "SD",
+  "PatchCreateDateTime": "0001-01-01T00:00:00",
+  "PatchCreatedBy": null,
+  "Branch": "SD-2",
+  "TagBase": "01",
+  "TagA": "SD-2.01A",
+  "TagB": "SD-2.01B",
+  "Schema": "DIARY",
+  "Suffix": null,
+  "FileCount": 2,
+  "AppCount": 0,
+  "PreReqCount": 0,
+  "TargetFilesDict": {
+    "Tables\\client.tab": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\DIARY\\tables\\client.tab",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": false
+    },
+    "Tables\\diary_entry_client.tab": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\DIARY\\tables\\diary_entry_client.tab",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": false
+    }
+  },
+  "Apps": [],
+  "LastPatchPreReqs": [],
+  "BestOrderPreReqs": [],
+  "AppPreReqs": [],
+  "PromoLevels": [
+    "PRD",
+    "UAT",
+    "HVM",
+    "TST",
+    "DEV",
+    "FVM"
+  ],
+  "ReRunnable": true,
+  "Trackable": true,
+  "SysDBA": false,
+  "AltSchemas": true
+}

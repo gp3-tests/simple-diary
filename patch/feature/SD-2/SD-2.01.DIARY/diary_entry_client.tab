@@ -1,0 +1,13 @@
+CREATE TABLE diary_entry_client (
+   entry_id   NUMBER
+  ,client_id int
+  ,created_on TIMESTAMP(6) DEFAULT SYSTIMESTAMP NOT NULL ENABLE
+  ,created_by VARCHAR2(128) DEFAULT COALESCE(
+     SYS_CONTEXT('APEX$SESSION','APP_USER')
+   ,SYS_CONTEXT('USERENV','SESSION_USER')
+  ) NOT NULL ENABLE
+  ,updated_on TIMESTAMP(6)
+  ,updated_by VARCHAR2(128)
+  ,PRIMARY KEY ( entry_id )
+    USING INDEX ENABLE
+);
