@@ -61,16 +61,20 @@ column patch_path new_value patch_path
 select &&APEXRM_user..arm_installer.adjust_patch_path(i_patch_name => '&&patch_name',i_patch_path => '&&patch_path') patch_path from dual;
 PROMPT 
 PROMPT TABLES
+WHENEVER SQLERROR CONTINUE
 PROMPT client.tab
 @&&patch_path.client.tab;
 PROMPT Progress: &&patch_name (50%)
 SPOOL OFF
 SPOOL &&log_filename APPEND
+WHENEVER SQLERROR EXIT FAILURE ROLLBACK
+WHENEVER SQLERROR CONTINUE
 PROMPT diary_entry_client.tab
 @&&patch_path.diary_entry_client.tab;
 PROMPT Progress: &&patch_name (100%)
 SPOOL OFF
 SPOOL &&log_filename APPEND
+WHENEVER SQLERROR EXIT FAILURE ROLLBACK
 
 COMMIT;
 PROMPT Compiling objects in schema &&DIARY_user

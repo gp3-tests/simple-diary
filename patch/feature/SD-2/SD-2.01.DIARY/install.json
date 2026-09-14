@@ -24,7 +24,7 @@
         "IsDeployable": true,
         "IsSQLScript": true
       },
-      "IsChecked": false
+      "IsChecked": true
     },
     "Tables\\diary_entry_client.tab": {
       "Item": {
@@ -33,7 +33,7 @@
         "IsDeployable": true,
         "IsSQLScript": true
       },
-      "IsChecked": false
+      "IsChecked": true
     }
   },
   "Apps": [],

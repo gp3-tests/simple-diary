@@ -28,10 +28,14 @@ select '&&org_code &&sys_code &&db_code' "Target" from dual;
 select user||'@'||global_name "Connection" from global_name;
 PROMPT 
 PROMPT TABLES
+WHENEVER SQLERROR CONTINUE
 PROMPT client.tab
 @&&patch_path.client.tab;
+WHENEVER SQLERROR EXIT FAILURE ROLLBACK
+WHENEVER SQLERROR CONTINUE
 PROMPT diary_entry_client.tab
 @&&patch_path.diary_entry_client.tab;
+WHENEVER SQLERROR EXIT FAILURE ROLLBACK
 
 COMMIT;
 PROMPT Completed &&patch_name
