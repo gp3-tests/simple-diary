@@ -1,0 +1,53 @@
+{
+  "PatchType": "feature",
+  "Name": "SD-2.02.DIARY",
+  "Description": "New View",
+  "Notes": null,
+  "RepoCode": "simple-diary",
+  "ProductCode": "SD",
+  "PatchCreateDateTime": "0001-01-01T00:00:00",
+  "PatchCreatedBy": null,
+  "Branch": "SD-2",
+  "TagBase": "02",
+  "TagA": "SD-2.02A",
+  "TagB": "SD-2.02B",
+  "Schema": "DIARY",
+  "Suffix": null,
+  "FileCount": 1,
+  "AppCount": 1,
+  "PreReqCount": 1,
+  "TargetFilesDict": {
+    "Views\\client_v.vw": {
+      "Item": {
+        "Extra": false,
+        "Path": "database\\DIARY\\views\\client_v.vw",
+        "IsDeployable": true,
+        "IsSQLScript": true
+      },
+      "IsChecked": false
+    }
+  },
+  "Apps": [
+    {
+      "AppNo": "100",
+      "SHA1": null
+    }
+  ],
+  "LastPatchPreReqs": [],
+  "BestOrderPreReqs": [],
+  "AppPreReqs": [
+    "SD-1.01.DIARY"
+  ],
+  "PromoLevels": [
+    "PRD",
+    "UAT",
+    "HVM",
+    "TST",
+    "DEV",
+    "FVM"
+  ],
+  "ReRunnable": true,
+  "Trackable": true,
+  "SysDBA": false,
+  "AltSchemas": true
+}

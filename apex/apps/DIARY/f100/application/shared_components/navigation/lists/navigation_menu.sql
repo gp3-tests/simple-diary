@@ -15,10 +15,9 @@ wwv_flow_imp_shared.create_list(
  p_id=>wwv_flow_imp.id(5364009681036336)
 ,p_name=>'Navigation Menu'
 ,p_list_status=>'PUBLIC'
-,p_version_scn=>4576056
+,p_version_scn=>5629525
 ,p_created_on=>wwv_flow_imp.dz('20251113001458Z')
-,p_updated_on=>wwv_flow_imp.dz('20251113002402Z')
-,p_created_by=>'ADMIN'
+,p_updated_on=>wwv_flow_imp.dz('20261123162802Z')
 ,p_updated_by=>'ADMIN'
 );
 wwv_flow_imp_shared.create_list_item(
@@ -43,6 +42,19 @@ wwv_flow_imp_shared.create_list_item(
 ,p_list_item_current_for_pages=>'2'
 ,p_created_on=>wwv_flow_imp.dz('20251113002402Z')
 ,p_updated_on=>wwv_flow_imp.dz('20251113002402Z')
+,p_created_by=>'ADMIN'
+,p_updated_by=>'ADMIN'
+);
+wwv_flow_imp_shared.create_list_item(
+ p_id=>wwv_flow_imp.id(4971133085407734)
+,p_list_item_display_sequence=>30
+,p_list_item_link_text=>'Clients'
+,p_list_item_link_target=>'f?p=&APP_ID.:3:&APP_SESSION.::&DEBUG.:::'
+,p_list_item_icon=>'fa-table'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'3,4'
+,p_created_on=>wwv_flow_imp.dz('20261123162802Z')
+,p_updated_on=>wwv_flow_imp.dz('20261123162802Z')
 ,p_created_by=>'ADMIN'
 ,p_updated_by=>'ADMIN'
 );

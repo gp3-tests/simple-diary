@@ -15,7 +15,17 @@ wwv_flow_imp_shared.create_menu(
  p_id=>wwv_flow_imp.id(5363595057036331)
 ,p_name=>'Breadcrumb'
 ,p_created_on=>wwv_flow_imp.dz('20251113001458Z')
-,p_updated_on=>wwv_flow_imp.dz('20251113002402Z')
+,p_updated_on=>wwv_flow_imp.dz('20261123162802Z')
+,p_created_by=>'ADMIN'
+,p_updated_by=>'ADMIN'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(4977931562407757)
+,p_short_name=>'Clients'
+,p_link=>'f?p=&APP_ID.:3:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>3
+,p_created_on=>wwv_flow_imp.dz('20261123162802Z')
+,p_updated_on=>wwv_flow_imp.dz('20261123162802Z')
 ,p_created_by=>'ADMIN'
 ,p_updated_by=>'ADMIN'
 );
