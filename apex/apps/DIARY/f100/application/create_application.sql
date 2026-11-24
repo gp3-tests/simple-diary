@@ -45,12 +45,12 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_string_01=>'APP_NAME'
 ,p_substitution_value_01=>'Simple Diary'
 ,p_created_on=>wwv_flow_imp.dz('20251113001458Z')
-,p_last_updated_on=>wwv_flow_imp.dz('20251113003134Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20261123162815Z')
 ,p_created_by=>'ADMIN'
 ,p_last_updated_by=>'ADMIN'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>6
-,p_version_scn=>4579989
+,p_version_scn=>5633551
 ,p_print_server_type=>'NATIVE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'
